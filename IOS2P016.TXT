@@ -1,0 +1,82 @@
+Author: Harald (HaWi) Wilhelm
+        Am Scheidweg 60
+        D-50765 Koeln
+        Germany
+        CIS: 100031,1250
+
+Description of IOS2P016.EXE
+===========================
+
+This application shows a full functioning DDE client example. You can use this
+utility to query all running DDE server applications.
+
+Initiate a DDE conversation with:
+
+ - Pushbutton Applications
+
+   -> Looks for all DDE server applications currently running. All found DDE
+      server will be inserted into the left listbox.
+
+ - Pushbutton Topics
+
+   -> Select an application in the left listbox and press this pushbutton. The
+      selected application will be queried for all supported topics. All topics
+      will be inserted into the second listbox.
+
+ - Pushbutton Items
+ 
+   -> This pushbutton is only enabled for the System topic. If the application
+      answer's with a System topic and you select this item in the second
+      listbox, you can hit the Items pushbutton to view all System items below
+      the System topic.
+
+ - Pushbutton Request
+
+   -> Use one of the following to issue a DDE request. What you'll need depends
+      on the supported topics. Query the corresponding DDE server manual.
+
+   1. Select an application
+      Select a topic
+
+   2. Select an application
+      Select a topic
+      Select an item
+
+   3. Select an application
+      Select a topic
+      Enter an item into the entryfield below the right listbox.
+      
+ - Pushbutton Poke
+
+   -> Use one of the following to issue a DDE poke. What you'll need depends
+      on the supported topics. Query the corresponding DDE server manual.
+
+   1. Select an application
+      Select a topic
+      Enter data into MLE
+
+   2. Select an application
+      Select a topic
+      Enter an item into the entryfield below the right listbox.
+      Enter data into MLE
+
+ - Pushbutton Advise
+
+   -> Use one of the following to issue a DDE advise. What you'll need depends
+      on the supported topics. Query the corresponding DDE server manual. Not
+      all DDE requests will support an advise request too.
+
+   1. Select an application
+      Select a topic
+
+   2. Select an application
+      Select a topic
+      Select an item
+
+   3. Select an application
+      Select a topic
+      Enter an item into the entryfield below the right listbox.
+
+ - Pushbutton Terminate (only enabled when an advise request is pending)
+
+   -> Immediately stops an active advise request.
